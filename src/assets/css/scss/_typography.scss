@@ -10,7 +10,8 @@
 
 body {
   background: $light1;
-    font-family: 'futura-normal', Arial, Helvetica, sans-serif;
+    // font-family: 'futura-normal', Arial, Helvetica, sans-serif;
+    font-family: 'SourceSansPro-Regular', Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
@@ -20,6 +21,7 @@ body {
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,p.lead {
   font-family: 'futura-light', serif;
+  // font-family: 'SourceSansPro-Regular', serif;
   line-height: 1.4;
   padding-bottom: .75rem;
   font-weight: 400;

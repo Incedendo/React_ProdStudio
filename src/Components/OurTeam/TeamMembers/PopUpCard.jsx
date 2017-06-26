@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import './PopUpCard.css';
+// import './PopUpCard.css';
 import teamInfo from '../teamInfo.js';
 import Logo from '../../Logo/Logo';
 
-const TeamMemberLogo = ({ source }) => (
+const TeamMemberLogo = ({ source, onClick }) => (
     <div className="round center img-wrapper">
-      <Logo className="thumbNailImg center" source={ source }/>
+      <Logo className="thumbNailImg center" source={ source } onClick={onClick}
+        />
     </div>
 )
 
@@ -16,14 +17,13 @@ class PopUpCard extends Component{
 
   render(){
     const isDisplayed = this.state.isDisplayed;
-    let PopUpCard = <div>{this.props.id}</div>;
+    let PopUpCard =(
+    <div>
+
+    </div>);
+
     return (
-      <div>
-        <button className="thumbNailButton" onClick={this.toggleDisplay}>
-            <TeamMemberLogo source={ this.props.img } />
-        </button>
-        {isDisplayed ?  <div>{PopUpCard}</div> : null}
-      </div>
+      <div></div>
     )
   }
 
@@ -35,3 +35,6 @@ class PopUpCard extends Component{
 }
 
 export default PopUpCard;
+
+// <TeamMemberLogo source={ this.props.img } onClick={this.toggleDisplay} />
+// {isDisplayed ?  <div>{PopUpCard}</div> : null}

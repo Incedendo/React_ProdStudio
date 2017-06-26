@@ -14,43 +14,11 @@ import Matt from '../../assets/img/Rounded_Headshot_Pics/Matthew.Rooney@3x.png';
 
 export default [
     {
-      "id" : 1,
-      "image": Kiet,
-      "name": "Kiet Nguyen",
-      "position": "React Intern",
-      "email": "Kiet.Nguyen@valic.com",
-      "bio": "this is a short bio"
-    },
-    {
-      "id" : 2,
-      "image": Chris,
-      "name": "Chris Concepcion",
-      "position": "Ios Intern",
-      "email": "Chris.Concepcion@valic.com",
-      "bio": "this is a short bio"
-    },
-    {
-      "id" : 3,
-      "image": Sam,
-      "name": "Sarmad Asif",
-      "position": "Front End Developer",
-      "email": "Sarmad.Asif@aig.com",
-      "bio": "this is a short bio"
-    },
-    {
-      "id" : 4,
-      "image": JohnyMac,
-      "name": "John Macmenamin",
-      "position": "Lead Front End Developer",
-      "email": "John.Macmenamin@aig.com",
-      "bio": "this is a short bio"
-    },
-    {
-      "id" : 5,
-      "image": Martin,
-      "name": "Martin Bee",
-      "position": "React Developer",
-      "email": "Martin.Bee@valic.com",
+      "id" : 12,
+      "image": "http://placekitten.com/g/175/175",
+      "name": "Wick Cannon",
+      "position": "Manager",
+      "email": "Wick.Canoon@aig.com",
       "bio": "this is a short bio"
     },
     {
@@ -62,11 +30,51 @@ export default [
       "bio": "this is a short bio"
     },
     {
+      "id" : 4,
+      "image": JohnyMac,
+      "name": "John Macmenamin",
+      "position": "Lead Front End Developer",
+      "email": "John.Macmenamin@aig.com",
+      "bio": "this is a short bio"
+    },
+    {
+      "id" : 3,
+      "image": Sam,
+      "name": "Sarmad Asif",
+      "position": "Front End Developer",
+      "email": "Sarmad.Asif@aig.com",
+      "bio": "this is a short bio"
+    },
+    {
+      "id" : 5,
+      "image": Martin,
+      "name": "Martin Bee",
+      "position": "React Developer",
+      "email": "Martin.Bee@valic.com",
+      "bio": "this is a short bio"
+    },
+    {
       "id" : 7,
       "image": Evelyn,
       "name": "Evelyn Pandozi",
       "position": "UX Product Designer",
       "email": "Evelyn.Pandozi@valic.com",
+      "bio": "this is a short bio"
+    },
+    {
+      "id" : 1,
+      "image": Kiet,
+      "name": "Kiet Nguyen",
+      "position": "React Intern",
+      "email": "Kiet.Nguyen@valic.com",
+      "bio": "this is a short bio"
+    },
+    {
+      "id" : 2,
+      "image": Chris,
+      "name": "Christian Concepcion",
+      "position": "Ios Intern",
+      "email": "Chris.Concepcion@valic.com",
       "bio": "this is a short bio"
     },
     {
@@ -95,14 +103,6 @@ export default [
     },
     {
       "id" : 11,
-      "image": "http://placekitten.com/g/175/175",
-      "name": "John Doe",
-      "position": "Designer",
-      "email": "John.Doe@valic.com",
-      "bio": "this is a short bio"
-    },
-    {
-      "id" : 12,
       "image": "http://placekitten.com/g/175/175",
       "name": "John Doe",
       "position": "Designer",
