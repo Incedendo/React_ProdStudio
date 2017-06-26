@@ -1,0 +1,34 @@
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.contrast {
+  color: #ffffff; }
+  .contrast h1, .contrast h2, .contrast h3, .contrast h4, .contrast h5, .contrast h6, .contrast p {
+    color: #ffffff; }
+  .contrast a, .contrast .link {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff; }
+  .contrast #menu-trigger .inner span, .contrast .overlay-close .inner span {
+    background: #ffffff; }
+  .contrast input:not([type=checkbox]):not([type=radio]), .contrast textarea, .contrast select {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff; }
+  .contrast .btn {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #ff5f6e; }
+    .contrast .btn.hollow {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff; }
+      .contrast .btn.hollow:hover, .contrast .btn.hollow:active {
+        background: #ffffff;
+        color: #373737;
+        border: 1px solid #ffffff; }

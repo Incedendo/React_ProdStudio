@@ -1,0 +1,15 @@
+.OurTeamStyle {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.Dimensions {
+    width: 80px;
+    height: 80px;
+}
+
+.lastRow {
+  height: 300px;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}

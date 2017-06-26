@@ -1,0 +1,244 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+.mobile-hidden {
+  display: inline-block; }
+
+.desktop-hidden {
+  display: none; }
+
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .mobile-padding-0 {
+    padding: 0 !important; }
+  .mobile-margin-0 {
+    margin: 0 !important; }
+  .mobile-center-text {
+    text-align: center; }
+  .header {
+    height: 100px; }
+    .header .logo {
+      position: relative;
+      top: -15px; }
+      .header .logo img {
+        height: 60px; }
+    .header #search-trigger {
+      position: absolute;
+      top: 20px;
+      left: 20px; }
+    .header #menu-trigger {
+      top: -22px;
+      opacity: 1;
+      display: block; }
+  body .nav {
+    display: none; }
+  body.mobile-menu-active .nav {
+    display: block; }
+  .nav ul li {
+    display: block; }
+    .nav ul li ul.dropdown-menu {
+      position: relative; }
+    .nav ul li .dropdown-toggle:before {
+      right: 14px; }
+    .nav ul li a {
+      display: block; }
+  .header .mobile-bar {
+    display: inline-block; }
+  body.mobile-menu-active #mobile-menu {
+    display: none; }
+  .lead {
+    margin-bottom: 15px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.6; }
+  .header, .footer .footer-light, .footer .footer-first, .footer .footer-second, .footer .footer-third, .footer .footer-copyright, .main-inside {
+    padding-right: 20px;
+    padding-left: 20px; }
+  .main-inside {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .footer .footer-second .col-lg-3 {
+    padding-bottom: 25px; }
+    .footer .footer-second .col-lg-3:last-of-type {
+      padding-bottom: 0; }
+  .footer .footer-light {
+    padding: 30px 15px;
+    margin-bottom: -8px; }
+    .footer .footer-light a {
+      padding: 0; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .mobile-hidden {
+    display: none; }
+  .desktop-hidden {
+    display: inline-block; }
+  .footer .footer-first, .footer .footer-second, .footer .footer-third, .footer .footer-copyright {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .footer .footer-logo-img {
+    display: block;
+    padding: 0;
+    margin-top: -20px; }
+    .footer .footer-logo-img .logo-img {
+      display: none;
+      margin: 0; }
+  .share-links {
+    right: 15px; }
+    .share-links.active {
+      opacity: 1;
+      visibility: visible; }
+    .share-links .toggle {
+      font-family: icomoon !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      opacity: 1;
+      visibility: visible;
+      width: 70px;
+      height: 50px;
+      position: relative;
+      bottom: 0px;
+      left: 0; }
+      .share-links .toggle:hover {
+        curser: pointer; }
+      .share-links .toggle:before {
+        font-size: 30px;
+        content: "\e944";
+        position: absolute;
+        left: 20px;
+        bottom: 21px; }
+    .share-links ul {
+      padding: 0;
+      transition: 0.3s ease-out;
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0; }
+  body.mobile-share-open .share-links .toggle:before {
+    content: "\e91e";
+    font-size: 26px;
+    left: 22px; }
+  body.mobile-share-open .share-links ul {
+    padding: 10px 0;
+    max-height: 0;
+    opacity: 1;
+    visibility: visible;
+    max-height: 600px;
+    margin-bottom: -10px; }
+  .mobile-accordion h3:after {
+    font-size: 11px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    content: "\e940";
+    font-family: icomoon !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .mobile-accordion h3:hover {
+    cursor: pointer; }
+  .mobile-accordion ul {
+    display: none; }
+    .mobile-accordion ul.active {
+      display: block; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .mobile-top-0 {
+    padding-top: 0; }
+  .mobile-bottom-0 {
+    padding-bottom: 0; }
+  .article-header-block {
+    max-height: 250px;
+    min-height: 200px; }
+    .article-header-block a .title {
+      top: 22%;
+      width: 74%; }
+      .article-header-block a .title h2 {
+        font-size: 19px;
+        padding-bottom: .5rem; }
+      .article-header-block a .title p {
+        font-size: 12px; }
+      .article-header-block a .title .author {
+        font-size: 12px;
+        margin: 8px 0 0 5px; }
+      .article-header-block a .title .avatar {
+        width: 38px;
+        height: 38px; }
+    .article-header-block a .time {
+      bottom: 20px;
+      left: 15px;
+      font-size: 12px; }
+      .article-header-block a .time .icon-clock {
+        left: 0px;
+        top: 1px;
+        font-size: 16px;
+        margin-right: 3px; }
+    .article-header-block .categories a {
+      bottom: 20px;
+      right: 15px;
+      font-size: 8px;
+      padding: 0px 8px; }
+  .card {
+    margin: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+    box-shadow: none;
+    height: 117px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+    .card a:last-of-type {
+      bottom: 20px;
+      right: 15px;
+      font-size: 8px;
+      padding: 0px 8px; }
+    .card a .overlay {
+      display: none; }
+    .card a .card-img-top {
+      height: 75px;
+      width: 75px;
+      border-radius: 4px;
+      float: left;
+      top: 20px;
+      left: 15px;
+      position: relative;
+      margin-bottom: 15px;
+      opacity: 1; }
+    .card a h2 {
+      color: #101112;
+      text-align: left;
+      font-size: 14px;
+      position: relative;
+      left: 29px;
+      margin-right: 60px; }
+    .card a span {
+      color: #BDC0CB;
+      font-size: 12px;
+      position: relative;
+      top: 4px;
+      left: 29px; }
+      .card a span .icon-clock {
+        position: relative;
+        left: 0px;
+        top: 2px;
+        color: #133d5f;
+        font-weight: 700;
+        font-size: 15px;
+        margin-right: 2px; } }
+
+/* Custom, iPhone Retina */

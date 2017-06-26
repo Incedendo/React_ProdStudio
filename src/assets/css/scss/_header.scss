@@ -1,0 +1,51 @@
+.header{
+  display: block;
+  width: 100%;
+  padding: 35px 35px;
+  color: $light1;
+  height: 130px;
+  overflow: hidden;
+  background: #ffffff;
+  .logo{
+    position: relative;
+    top: -19px;
+    img {
+      height: 100px;
+    }
+  }
+  // .mobile-bar{
+  //   display: none;
+  // }
+  .search-icon {
+    height: 29px;
+  }
+  #menu-trigger{
+    top: -22px;
+    opacity: 0;
+    display: none;
+  }
+  ul{
+    top: -6px;
+    position: relative;
+    li{
+      display: inline-block;
+      padding: 0px 5px;
+      a{
+        font-size: 18px;
+        text-transform: capitalize;;
+        display: inline-block;
+        padding: 21px;
+        color: #54565b;
+        text-decoration: none;
+        font-weight: 100;
+        &:hover{
+          display: inline-block;
+          color: rgba(252, 42, 104, 1.0);
+        }
+        &.active{
+          color: #00a4e4;
+        }
+      }
+    }
+  }
+}

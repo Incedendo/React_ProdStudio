@@ -1,0 +1,84 @@
+
+// ==========================================================================
+// Overlays
+// ==========================================================================
+
+// Overlay Open
+body.overlay-open{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+}
+// Overlay
+.overlay{
+  background: $color-6;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 105;
+  overflow-y: auto;
+  // Hide
+  visibility: hidden;
+  opacity: 0.0;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.is-active{
+    visibility: visible;
+    opacity: 1;
+    .inner{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .inner{
+    @extend .container;
+    // Center with Flexbox
+    text-align: center;
+    flex: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  // Overlay Close
+  .overlay-close{
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 84px;
+    height: 75px;
+    padding: 23px;
+    z-index: 999;
+    .inner{
+      transition: none;
+      position: relative;
+      width: 38px;
+      height: 29px;
+      padding: 0;
+      span{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: $gray-0;
+        border-radius: 0px;
+        opacity: 1;
+        left: 0;
+        top: 13px;
+        &.one{
+          transform: rotate(45deg);
+        }
+        &.two{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+}

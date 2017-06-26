@@ -1,0 +1,46 @@
+.dashboard-wrapper .dashboard-sidebar {
+  z-index: 1;
+  position: absolute;
+  width: 280px; }
+  .dashboard-wrapper .dashboard-sidebar .logo-wrapper {
+    border-bottom: 1px solid #e0e6ed;
+    padding: 30px 25px;
+    width: 100%;
+    text-align: center;
+    display: inline-block; }
+    .dashboard-wrapper .dashboard-sidebar .logo-wrapper .sidebar-logo {
+      height: 40px;
+      position: relative; }
+  .dashboard-wrapper .dashboard-sidebar ul {
+    width: 100%;
+    display: inline-block; }
+    .dashboard-wrapper .dashboard-sidebar ul li a {
+      width: 100%;
+      padding: 18px 25px;
+      display: inline-block;
+      border-bottom: 1px solid #e0e6ed;
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 1.15rem; }
+      .dashboard-wrapper .dashboard-sidebar ul li a:hover, .dashboard-wrapper .dashboard-sidebar ul li a:focus {
+        color: rgba(0, 0, 0, 0.87);
+        text-decoration: none; }
+      .dashboard-wrapper .dashboard-sidebar ul li a span.arrow {
+        position: relative;
+        top: 15px;
+        left: -5px;
+        float: right; }
+        .dashboard-wrapper .dashboard-sidebar ul li a span.arrow svg {
+          fill: #d3dce6; }
+      .dashboard-wrapper .dashboard-sidebar ul li a ul.open {
+        background: #f9fafc; }
+
+.dashboard-wrapper .dashboard-content {
+  position: inherit;
+  margin: 0 0 0 280px;
+  border-left: 1px solid #e0e6ed; }
+  .dashboard-wrapper .dashboard-content .dashboard-topbar {
+    border-bottom: 1px solid #e0e6ed;
+    height: 100px;
+    width: 100%; }
+  .dashboard-wrapper .dashboard-content .dashboard-content-inner {
+    padding: 35px 40px; }

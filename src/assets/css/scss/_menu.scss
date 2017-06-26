@@ -1,0 +1,229 @@
+
+// ==========================================================================
+// Menus
+// ==========================================================================
+
+/* Verically center and set background to cover, set height to viewport in js. */
+.cover{
+  @extend .contrast;
+  //background: $color-6 url('../img/spark.jpg') no-repeat center top;
+  background: $color-6;
+  background-size: cover;
+  position: relative;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .inner{
+    text-align: center;
+    flex: none;
+  }
+}
+.no-cover{
+  @extend .contrast;
+  background: $color-6;
+}
+// Adds a element to take up space for navbar
+header:after{
+  content: '';
+  display: block;
+  height: 72px;
+}
+
+// Menu Horizontal Open
+body.fixed-menu-horizontal{
+  //margin-top: 72px;
+  nav.menu-horizontal{
+    background: $nav-bg-color;
+    position: fixed;
+    top:0;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+// Menu Horizontal
+nav.menu-horizontal{
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 100%;
+  .inner{
+    @extend .container;
+    .branding{
+      @extend .left;
+      color: $color-1;
+      padding: 1.1rem 0.0rem;
+      font-weight: $font-bold;
+      border: 0;
+    }
+    ul{
+      @extend .right;
+      @extend .list-unstyled;
+      @extend .list-inline;
+      li{
+        a{
+          color: $color-3;
+          padding: 1.1rem 1.1rem;
+          display: block;
+          border: 0;
+          &:active,
+          &.active,
+          &:hover {
+            color: $color-1;
+          }
+        }
+      }
+      li:last-child a {
+        padding: 1.1rem 0.0rem 1.1rem 1.1rem;
+      }
+    }
+  }
+}
+
+// Overlay Menu Open
+body.overlayMenu-open{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  .overlay-menu{
+    opacity: 1;
+    visibility: visible;
+  }
+  #menu-trigger .inner span{
+    background: #ffffff !important;
+  }
+}
+// Overlay Menu
+.overlay-menu{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff2366+0,6758ea+100 */
+  background: rgb(255,35,102); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,35,102,1) 0%, rgba(103,88,234,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,35,102,1) 0%,rgba(103,88,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,35,102,1) 0%,rgba(103,88,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2366', endColorstr='#6758ea',GradientType=0 ); /* IE6-9 */
+
+  touch-action: manipulation;
+  user-select: none;
+  cursor: pointer;
+  //background: $color-6;
+
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  overflow-y: auto;
+  // Hide
+  visibility: hidden;
+  opacity: 0.0;
+  // Center with Flexbox
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  .inner{
+    // Center with Flexbox
+    text-align: center;
+    flex: none;
+    width: 100%;
+    max-height: 100vh;
+  }
+  ul{
+    li{
+      a{
+        color: $color-2;
+        padding: 0.75rem 0;
+        display: block;
+        font-size: 29px;
+        border: 0;
+        text-align: center;
+        // Menu Items Effect
+        transition: all $transition-speed-slow .15s ease-out;
+        position: relative;
+        left: -30px;
+        opacity: 0;
+        visibility: hidden;
+        // Menu Items Effect Open
+        &.is-active{
+          left: 0px;
+          opacity: 1;
+          visibility: visible;
+        }
+        &:active,
+        &.active,
+        &:hover {
+          color: $gray-0;
+        }
+      }
+    }
+  }
+
+}
+
+
+// Overlay Menu Trigger Open
+body.overlayMenu-open #menu-trigger{
+  .inner{
+    span{
+      &.one, &.four{
+        top: 13px;
+        width: 0%;
+        left: 50%;
+      }
+      &.two{
+        transform: rotate(45deg);
+      }
+      &.three{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+// Overlay Menu Trigger
+#menu-trigger {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 84px;
+  height: 75px;
+  padding: 23px;
+  transform: rotate(0deg);
+  transition: .3s .1s ease-out;
+  cursor: pointer;
+  z-index: 105;
+  .inner{
+    position: relative;
+    width: 38px;
+    height: 29px;
+    padding: 0;
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #222222;
+      border-radius: 0px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .15s ease-out;
+      &.one{
+        top: 0px;
+      }
+      &.two, &.three{
+        top: 13px;
+      }
+      &.four{
+        top: 26px;
+      }
+    }
+  }
+}

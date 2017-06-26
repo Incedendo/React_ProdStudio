@@ -1,0 +1,50 @@
+.well {
+  padding: 25px 20px;
+  background-color: $gray4;
+  blockquote {
+    border-color: $gray3;
+  }
+}
+.well-lg {
+  padding: 30px 25px;
+}
+
+
+.rounded-sm{
+  border-radius: $border-radius1;
+  overflow: hidden;
+}
+
+.rounded-md{
+  border-radius: $border-radius2;
+  overflow: hidden;
+}
+.rounded-lg{
+  border-radius: $border-radius3;
+  overflow: hidden;
+}
+
+.round{
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background: rgba(252, 42, 104, 1.0);
+	color: $primary5;
+	text-shadow: none;
+}
+::-webkit-selection {
+	background: rgba(252, 42, 104, 1.0);
+	color: $primary5;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: rgba(252, 42, 104, 1.0);
+	color: $primary5;
+	text-shadow: none;
+}

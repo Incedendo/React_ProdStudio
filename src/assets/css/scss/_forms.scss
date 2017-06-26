@@ -1,0 +1,138 @@
+input:not([type=checkbox]):not([type=radio]), textarea{
+  -webkit-appearance: none;
+	box-shadow: none;
+}
+
+label,label.control-label {
+  margin: 10px 0 6px;
+  font-weight: 700;
+  display: block;
+  .required,.gfield_required{
+    color: $danger2;
+    padding-left: 3px;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+  }
+}
+
+input:not([type=button]):not([type=submit]):not([type=checkbox]):not([type=radio]),.form-control,textarea {
+	border: 2px solid rgba(225, 232, 238, 1.0);
+	border-radius: 5px;
+  color: $black2;
+  box-shadow: none;
+	padding: 19px 15px;
+	width: 100%;
+  font-size: 90%;
+  line-height: 100%;
+}
+input:not([type=button]):not([type=submit]):not([type=checkbox]):not([type=radio]){
+  height: 63px;
+  line-height: 100%;
+}
+
+//Create into button group
+.input-group{
+  position: relative;
+
+  input,.form-control{
+    border-radius: 50px !important;
+    padding-left: 25px !important;
+  }
+  button,input[type="button"],input[type="submit"],.btn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 80px;
+  max-width: 100%;
+}
+
+.select-wrapper{
+	position: relative;
+	select{
+		-webkit-appearance: none;
+		cursor: pointer;
+		background: $gray3;
+	}
+	&:before {
+    content: "\e91d";
+    font-family: icomoon;
+    color: #bfc8e2;
+    right: 18px;
+    top: 19px;
+    position: absolute;
+    font-size: 14px;
+    pointer-events: none;
+		pointer-events: none
+	}
+}
+
+// Inputs
+input[type=radio],
+input[type=checkbox] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  visibility: hidden;
+}
+
+// Icons Unchecked
+input[type=radio] ~ label:before,
+input[type=checkbox] ~ label:before {
+  font-family: "icomoon";
+  display: inline-block;
+  letter-spacing: 10px;
+  font-size: 1.2em;
+  color: $black1;
+  width: 1.4em;
+  transition: all 0.2s linear;
+  position: relative;
+  top: 3px;
+}
+// Icons Checked
+input[type=radio]:checked ~ label:before,
+input[type=checkbox]:checked ~ label:before  {
+  font-size: 1.2em;
+  color: $primary2;
+  letter-spacing: 5px;
+}
+
+// Radio
+input[type=radio] ~ label:before {
+  content: "\e910";
+}
+// Radio Checked
+input[type=radio]:checked ~ label:before {
+  content: "\e914";
+}
+
+// Checkbox
+input[type=checkbox] ~ label:before {
+  content: "\e910";
+}
+// Checkbox Checked
+input[type=checkbox]:checked ~ label:before {
+  content: "\e911";
+}
+
+// Disabled
+input[type=radio]:disabled ~ label,
+input[type=checkbox]:disabled ~ label {
+  opacity: .5;
+  &:before{
+    opacity: .5;
+  }
+}

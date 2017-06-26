@@ -1,0 +1,78 @@
+.thumbnail {
+  border-radius: 50%;
+  height: 170px;
+}
+
+.img-wrapper{
+    margin: 20px auto;
+}
+
+.TeamMemberStyle {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.center {
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.font-bold{
+  font-weight: bold;
+  color: #646f7b;
+}
+
+.thumbNailImg {
+  border-radius: 50%;
+  height: 170px;
+}
+
+#cover{
+  position:fixed;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.6);
+  z-index:5;
+  width: 1300px;
+  height:1000px;
+  display:none;
+}
+
+#loginScreen {
+  height: 1200px;
+  width: 900px;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+  display: none;
+  background: no-repeat;
+  border: 5px solid #cccccc;
+  border-radius: 10px;
+}
+
+.cancel { display:block; position:absolute; top:3px; right:2px; background:rgb(245,245,245); color:black; height:30px; width:35px; font-size:30px; text-decoration:none; text-align:center; font-weight:bold; }
+
+#loginScreen:target, #loginScreen:target + #cover{
+  display: block;
+  opacity: 2;
+}
+
+
+/*picture{
+  border 1px;
+  color: #ccc;
+  font: same with PSO's font
+  get stylesheet from PSO's project from Sam (color and fonts)
+  include email symbol next to email
+
+  USE ACCOUNT'S FONT (pso) for name, position and email
+    - follow the link's convention from PSO project
+
+  For Lab's 2nd page: follow VALIC's convention (Back button + NAME)
+  Possibly add one more tab for career
+  For the form: keep the placeholders
+  remove 2 photos at the footer
+}*/

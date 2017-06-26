@@ -1,0 +1,23 @@
+#hero {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086de+0,6758ea+100 */
+  background: #0086de;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0086de 0%, #6758ea 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0086de 0%, #6758ea 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0086de 0%, #6758ea 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0086de', endColorstr='#6758ea',GradientType=0 );
+  /* IE6-9 */
+  height: 450px;
+  overflow: hidden; }
+  #hero #bg-triangle {
+    height: 550px;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    opacity: .3; }
+
+.paralax {
+  position: relative; }

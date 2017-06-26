@@ -1,0 +1,141 @@
+.nav{
+  display: block;
+  width: 100%;
+  background: $primary2;
+  color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  ul{
+    margin: 0;
+    overflow: auto;
+    li{
+      display: inline-block;
+      a{
+        color: $light3;
+        padding: 25px 15px;
+        display: inline-block;
+        &:hover, &:focus{
+          color: $light2;
+          text-decoration: none;
+        }
+      }
+      &.active{
+        a{
+          color: $light1;
+          background: $primary1;
+        }
+      }
+      .dropdown-toggle{
+        padding: 25px 35px 25px 15px;
+        position: relative;
+        &:before{
+          font-size: 9px;
+          width: 25px;
+          height: 25px;
+          display: block;
+          position: absolute;
+          right: -1px;
+          top: 37px;
+          content: "\e940";
+          font-family: icomoon!important;
+          speak: none;
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+      ul.dropdown-menu {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        &.active{
+          display: block;
+          z-index: 1;
+          background: $primary1;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+body.mobile-menu-active .mobile-bar {
+  opacity: 1;
+}
+
+.mobile-bar {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  background: #EDEEF3;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  z-index: 5;
+}
+
+/*Overlay Menu Trigger Open*/
+
+body.mobile-menu-active #mobile-menu-trigger .inner span {
+  &.one, &.four {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
+  &.two {
+    transform: rotate(45deg);
+  }
+  &.three {
+    transform: rotate(-45deg);
+  }
+}
+
+/*Overlay Menu Trigger*/
+#mobile-menu-trigger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  padding: 20px 14px;
+  transform: rotate(0deg);
+  transition: .3s .1s ease-out;
+  cursor: pointer;
+  z-index: 10;
+  .inner {
+    position: relative;
+    width: 32px;
+    height: 22px;
+    padding: 0;
+    span {
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: #343434;
+      border-radius: 0px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .15s ease-out;
+      &.one {
+        top: 0px;
+      }
+      &.two, &.three {
+        top: 10px;
+      }
+      &.four {
+        top: 20px;
+      }
+    }
+  }
+}

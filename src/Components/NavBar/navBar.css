@@ -1,0 +1,32 @@
+.pull-right{
+  float: right !important;
+}
+
+.NavStyle {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.tranform{
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.header-logo {
+  border-radius: 0;
+  height: 50px;
+}
+
+#header{
+
+}
+
+#search img{
+  height: 25px;
+  position: relative;
+  top: -5px;
+}
+
+#header-logo {
+  top: -10px;
+}

@@ -1,0 +1,15 @@
+.Dimensions {
+    width: 80px;
+    height: 80px;
+}
+
+.OurWorkProcessStyle {
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.lastRow{
+  height: 300px;
+  opacity: 1;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
