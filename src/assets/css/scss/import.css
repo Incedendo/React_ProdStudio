@@ -243,7 +243,11 @@ button, input[type="button"], input[type="submit"], .btn {
   line-height: 100%;
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+  font-family: 'futura-bold', serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: .5px; }
   button:hover, button:focus, button:active, button.active, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, input[type="button"].active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, input[type="submit"].active, .btn:hover, .btn:focus, .btn:active, .btn.active {
     background: rgba(252, 42, 104, 0.9);
     border-color: #fc2a68;
