@@ -19,6 +19,14 @@ const OurTeam = () => {
           <TeamMember />
       </div>
 
+      <div id="bioScreen">
+        <a href="#OurTeam" className="cancel">&times;</a>
+        <p className="bio">
+          This is a simple bio for everyone for now
+        </p>
+      </div>
+      <div id="cover" > </div>
+
     </div>
   )
 

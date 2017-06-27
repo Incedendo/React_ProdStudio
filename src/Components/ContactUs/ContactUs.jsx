@@ -26,22 +26,23 @@ class ContactUs extends Component {
               <div className="choke padding-bottom-0">
                 <div className="row">
                   <form onSubmit={this.handleCreate}>
-                  <div className="col-md-6 padding-top-3">
-                    <input type="text" placeholder="Your name" ref="username"
-                    />
-                  </div>
-                  <div className="col-md-6 padding-top-3">
-                    <input type="text" placeholder="E-mail" ref="email"
-                    />
-                  </div>
-                  <div className="col-md-12 padding-top-3">
-                    <textarea placeholder="Message" ref="comment"></textarea>
-                  </div>
-                  {this.renderError()}
-                  <div className="col-md-12 padding-top-3">
-                    <input type="submit" className="btn btn-block" value="Get in touch" />
-                  </div>
-                </form>
+                    <div className="col-md-6 padding-top-3">
+                      <input type="text" placeholder="Your name" ref="username"
+                      />
+
+                    </div>
+                    <div className="col-md-6 padding-top-3">
+                      <input type="text" placeholder="E-mail" ref="email"
+                      />
+                    </div>
+                    <div className="col-md-12 padding-top-3">
+                      <textarea placeholder="Message" ref="comment"></textarea>
+                    </div>
+                    {this.renderError()}
+                    <div className="col-md-12 padding-top-3">
+                      <input type="submit" className="btn btn-block" value="Get in touch" />
+                    </div>
+                  </form>
                 </div>
 
                 <div className="row padding-top-3">
