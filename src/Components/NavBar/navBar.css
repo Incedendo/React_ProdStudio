@@ -30,3 +30,14 @@
 #header-logo {
   top: -10px;
 }
+
+.navBarLogo {
+  position: relative;
+  top: 5px;
+  float: left;
+}
+
+.top-align {
+  position: relative;
+  top: 27px;
+}

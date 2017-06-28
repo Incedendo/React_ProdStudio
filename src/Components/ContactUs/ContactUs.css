@@ -11,3 +11,7 @@
 .textField{
   text-align: left;
 }
+
+TextField:hover{
+  border-color: #00a4e4;
+}
