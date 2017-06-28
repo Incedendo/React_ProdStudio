@@ -38,7 +38,7 @@ class ContactUs extends Component {
                     </div>
                     {this.renderError()}
                     <div className="col-md-12 padding-top-3">
-                      <input type="submit" className="btn btn-block" value="Get in touch" />
+                      <input type="submit" className="btn btn-block center btn-md btn-royal-light" value="Get in touch" />
                     </div>
                   </form>
                 </div>

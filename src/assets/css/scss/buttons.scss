@@ -1,14 +1,16 @@
 
+
+
 button,input[type="button"],input[type="submit"],.btn {
-  background: rgba(252, 42, 104, 1.0);
-  border-color: rgba(252, 42, 104, 1.0);
+  background: #4c8af4;
+  border-color: #4c8af4;
   padding: 14px 40px;
-  border-radius: $border-radius1;
+  border-radius: 3rem;
 	border-width: 1px;
   border-style: solid;
 	text-decoration: none;
 	//display: inline-block;
-  color: $light1;
+  color: #fff;
   font-size: 90%;
   height: 60px;
   line-height: 100%;
@@ -20,11 +22,29 @@ button,input[type="button"],input[type="submit"],.btn {
   font-size: 18px;
   letter-spacing: .5px;
 	&:hover, &:focus, &:active, &.active {
-    background: rgba(252, 42, 104, 0.9);
-    border-color: rgba(252, 42, 104, 1.0);
-		text-decoration: none;
-    color: $light1;
+    // background: rgba(252, 42, 104, 0.9);
+    // border-color: rgba(252, 42, 104, 1.0);
+		// text-decoration: none;
+    // color: $light1;
+    background: #2a74f2;
+    color: #fff;
+    border: 2px solid #2a74f2;
 	}
+}
+
+.test{
+  font-size: 100px;
+}
+
+.btn-md {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 1rem 2.5rem;
+}
+
+.btn-royal-light {
+  background-color: #4c8af4;
+  border-color: #4c8af4;
 }
 
 .btn-block {
@@ -32,6 +52,7 @@ button,input[type="button"],input[type="submit"],.btn {
 	display: block;
 	text-align: center;
 }
+
 .btn-lg {
   font-size: 18px;
 }

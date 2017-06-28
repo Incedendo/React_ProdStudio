@@ -6,3 +6,9 @@
 .dimensions{
   height:375px;
 }
+
+.labsLink{
+  color: #1b4eb6;
+  text-decoration: none;
+  cursor: pointer;
+}

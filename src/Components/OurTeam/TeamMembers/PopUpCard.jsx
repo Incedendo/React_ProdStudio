@@ -35,6 +35,3 @@ class PopUpCard extends Component{
 }
 
 export default PopUpCard;
-
-// <TeamMemberLogo source={ this.props.img } onClick={this.toggleDisplay} />
-// {isDisplayed ?  <div>{PopUpCard}</div> : null}
