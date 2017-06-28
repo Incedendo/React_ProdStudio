@@ -485,7 +485,7 @@
   font-family: 'SourceSansPro-Regular', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: auto; }
   .fl-input-container input:focus {
-    border-color: #4c8af4; }
+    border-color: #00a4e4 !important; }
     .fl-input-container input:focus + label {
       color: #191f26; }
 

@@ -13,7 +13,11 @@ class ContactUs extends Component {
 
   renderError() {
     if(!this.state.error) {return null;}
-    return <div>{ this.state.error.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}</div>;
+    return(
+      <div>
+        { this.state.error.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}
+      </div>
+    );
   }
 
   render(){

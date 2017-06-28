@@ -42,7 +42,8 @@
   -webkit-font-smoothing: auto;
 
   &:focus {
-    border-color: $royal-light;
+    //border-color: $royal-light;
+    border-color: #00a4e4 !important;
 
     & + label {
       color: $slate-dark;
