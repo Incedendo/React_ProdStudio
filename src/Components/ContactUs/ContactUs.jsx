@@ -14,7 +14,7 @@ class ContactUs extends Component {
   renderError() {
     if(!this.state.error) {return null;}
     return(
-      <div>
+      <div className='errorBox'>
         { this.state.error.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}
       </div>
     );
@@ -35,7 +35,7 @@ class ContactUs extends Component {
                       <TextField placeholder="Your name" ref="username" />
                     </div>
                     <div className="col-md-6">
-                      <TextField placeholder="E-mail" ref="email" />
+                      <TextField placeholder="E-mail" ref="email" email={true}/>
                     </div>
                     <div className="col-md-12 padding-bottom-3">
                       <TextField placeholder="Message" ref="comment" />

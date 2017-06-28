@@ -2,6 +2,7 @@ import React, {  Component } from 'react';
 import { bool, string, func } from 'prop-types';
 import classNames from 'classnames';
 import '../../assets/css/scss/TextField.css';
+import emailLogo from '../../assets/img/icon-email.svg';
 
 export default class TextField extends Component {
   static propTypes = {
@@ -87,15 +88,26 @@ export default class TextField extends Component {
 
   render() {
     const { id, placeholder } = this.props;
-
-    return (
-      <div className="fl-input-container">
-        {this.renderInput()}
-        <label className="fl-input-label" htmlFor={id}>
-          {placeholder}
-        </label>
-        {this.renderErrorMessage()}
-      </div>
-    );
+    if(!this.props.email) {
+      return (
+        <div className="fl-input-container">
+          {this.renderInput()}
+          <label className="fl-input-label" htmlFor={id}>
+            {placeholder}
+          </label>
+          {this.renderErrorMessage()}
+        </div>
+      );
+    }else {
+      return (
+        <div className="fl-input-container">
+          {this.renderInput()}
+          <label className="fl-input-label" htmlFor={id}>
+            <img className='email-image' src={emailLogo} />
+          </label>
+          {this.renderErrorMessage()}
+        </div>
+      );
+    }
   }
 }

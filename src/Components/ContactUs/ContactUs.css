@@ -8,10 +8,7 @@
   margin-left: 15px;
 }
 
-.textField{
-  text-align: left;
-}
-
-TextField:hover{
-  border-color: #00a4e4;
+.errorBox {
+  height: auto;
+  width: auto;
 }
