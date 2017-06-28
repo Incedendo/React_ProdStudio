@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TextField from './Textfield';
 import './ContactUs.css';
 import '../../assets/css/scss/import.css';
 import uuid from 'uuid';
@@ -21,26 +22,23 @@ class ContactUs extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="h1 text-center padding-bottom-3">Contact Us</h2>
-              <p className="lead text-center padding-bottom-4">We are driven by creating experiences that deliver results.</p>
+              <h2 className="h1 text-center padding-bottom-3 margin-top-0">Contact Us</h2>
+            <p className="lead text-center margin-bottom-0">We are driven by creating experiences that deliver results.</p>
               <div className="choke padding-bottom-0">
                 <div className="row">
                   <form onSubmit={this.handleCreate}>
-                    <div className="col-md-6 padding-top-3">
-                      <input type="text" placeholder="Your name" ref="username"
-                      />
-
+                    <div className="col-md-6">
+                      <TextField placeholder="Your name" ref="username" />
                     </div>
-                    <div className="col-md-6 padding-top-3">
-                      <input type="text" placeholder="E-mail" ref="email"
-                      />
+                    <div className="col-md-6">
+                      <TextField placeholder="E-mail" ref="email" />
                     </div>
-                    <div className="col-md-12 padding-top-3">
-                      <textarea placeholder="Message" ref="comment"></textarea>
+                    <div className="col-md-12 padding-bottom-3">
+                      <TextField placeholder="Message" ref="comment" />
                     </div>
                     {this.renderError()}
                     <div className="col-md-12 padding-top-3">
-                      <input type="submit" className="btn btn-block" value="Get in touch" />
+                      <input type="submit" className="btn btn-block center btn-md btn-royal-light" value="Get in touch" />
                     </div>
                   </form>
                 </div>
@@ -57,9 +55,7 @@ class ContactUs extends Component {
                     </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>

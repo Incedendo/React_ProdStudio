@@ -50,10 +50,3 @@ class TeamMember extends Component {
 }
 
 export default TeamMember;
-
-// {Object.keys(employees).map(key => (
-//   <div>
-//     {employees[key].name}
-//     <img src={employees[key].image} key={key} />
-//   </div>
-// ))}
