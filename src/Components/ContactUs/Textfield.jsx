@@ -25,7 +25,9 @@ export default class TextField extends Component {
     keepCharPositions: true,
   };
 
-  state = { hasValue: false };
+  state = {
+    hasValue: false
+  };
 
   onBlur = event => this.setState({ hasValue: !!event.currentTarget.value });
 

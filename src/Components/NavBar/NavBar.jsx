@@ -8,7 +8,7 @@ import search from '../../assets/img/icon-search.svg';
 
 const NavBar = () => (
 
-      <div id="header" className="header padding-2 margin-3 padding-left-3">
+      <div id="header" className="header padding-2 margin-0 padding-left-3">
         <a href="/" className="logo header-stagger tranform ">
           <Logo className="navBarLogo" source={logo}/>
         </a>
