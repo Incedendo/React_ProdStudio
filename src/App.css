@@ -20,10 +20,30 @@
   padding: 35px 35px;
   height: 130px;
   overflow: hidden;
-  background: #ffffff; }
+  background: #ffffff;
+}
+
+.nonScrolling {
+  position:absolute;
+  display: block;
+  top: 130px;
+  left:0px;
+  right:0px;
+  bottom:130px;
+  overflow-y:scroll;
+  /*margin-bottom: 120px !important;*/
+}​
+
+.staticFooter {
+  position: relative !important;
+  top: 1076px;
+}
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   to {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}

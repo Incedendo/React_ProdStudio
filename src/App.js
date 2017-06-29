@@ -11,37 +11,41 @@ import Footer from './Components/Footer/Footer';
 
 const App = ()  => (
   <div className="App">
-    <div>
+    <div >
       <NavBar />
     </div>
 
-    <div>
-      <Hero />
+    <div className="nonScrolling">
+      <div>
+        <Hero />
+      </div>
+
+      <div>
+        <AboutUs />
+      </div>
+
+      <div>
+        <OurWorkProcess />
+      </div>
+
+      <div>
+        <OurTeam />
+      </div>
+
+      <div>
+        <Labs />
+      </div>
+
+      <div>
+        <ContactUs />
+      </div>
+
+      <div>
+        <Footer />
+      </div>
     </div>
 
-    <div>
-      <AboutUs />
-    </div>
-
-    <div>
-      <OurWorkProcess />
-    </div>
-
-    <div>
-      <OurTeam />
-    </div>
-
-    <div>
-      <Labs />
-    </div>
-
-    <div>
-      <ContactUs />
-    </div>
-
-    <div>
-      <Footer />
-    </div>
+    <div className="staticFooter">hello world</div>
 
   </div>
 )
