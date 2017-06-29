@@ -3,7 +3,6 @@ import './ContactUs.css';
 import '../../assets/css/scss/import.css';
 import ContactForm from './ContactForm';
 
-
 const contactEmail = () => (
   <div className="row padding-top-3">
     <div className="col-md-12">
@@ -37,7 +36,5 @@ const ContactUs = () => (
     </div>
   </div>
 )
-
-
 
 export default ContactUs;
