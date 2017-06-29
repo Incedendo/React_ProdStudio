@@ -14,6 +14,7 @@ export default class TextField extends Component {
     onChangeHook: func,
     guide: bool,
     keepCharPositions: bool,
+    email: bool,
   };
 
   static defaultProps = {
@@ -23,6 +24,7 @@ export default class TextField extends Component {
     onChangeHook: undefined,
     guide: false,
     keepCharPositions: true,
+    email: false,
   };
 
   state = {
@@ -62,6 +64,7 @@ export default class TextField extends Component {
       onChangeHook,
       guide,
       keepCharPositions,
+      email,
       ...rest
     } = this.props;
 

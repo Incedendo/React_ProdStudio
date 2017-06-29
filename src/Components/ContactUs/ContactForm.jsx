@@ -8,27 +8,30 @@ const contactUsFormConfig = [
   {
     placeholder: "username",
     id: "username",
-    classes: "col-md-6"
+    classes: "col-md-6",
+    email: false
   },
   {
     placeholder: "email",
     id: "email",
-    classes: "col-md-6"
+    classes: "col-md-6",
+    email: true
   },
   {
     placeholder: "comment",
     id: "comment",
-    classes: "col-md-12 padding-bottom-3"
+    classes: "col-md-12 padding-bottom-3",
+    email: false
   },
 ]
 
-class ContactForm extends Component {
+export default class ContactForm extends Component {
 
   state = {
     username: "",
     email: "",
     comment: "",
-    error: []
+    errors: []
   };
 
   handleTextFieldChange = (event, id) => {
@@ -38,10 +41,10 @@ class ContactForm extends Component {
   }
 
   renderError() {
-    if(!this.state.error) {return null;}
+    if(!this.state.errors) {return null;}
     return(
       <div className='errorBox'>
-        { this.state.error.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}
+        { this.state.errors.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}
       </div>
     );
   }
@@ -66,28 +69,27 @@ class ContactForm extends Component {
 
     const validateInput = this.validateInput(this.state.username, this.state.email, this.state.comment)
 
-
     if(validateInput) {
-      this.setState({ error: this.state.error });
+      this.setState({ errors: this.state.errors });
       return;
     }
 
-    this.setState({ error: [] });
+    this.setState({ errors: [] });
   }
 
   validateInput(usernameInput, emailInput, commentInput) {
     if(!usernameInput || !emailInput || !commentInput){
-      this.state.error = [];
+      this.state.errors = [];
       if(!usernameInput){
-        this.state.error.push({ err: "Please enter Username" });
+        this.state.errors.push({ err: "Please enter Username" });
       }
       if(!emailInput){
-        this.state.error.push({ err: "Please enter Email" });
+        this.state.errors.push({ err: "Please enter Email" });
       }
       if(!commentInput){
-        this.state.error.push({ err: "Please enter Comment" });
+        this.state.errors.push({ err: "Please enter Comment" });
       }
-      return this.state.error;
+      return this.state.errors;
     }
     else {
       return null;
@@ -112,5 +114,3 @@ ContactForm.propTypes = {
   email: React.PropTypes.string,
   message: React.PropTypes.string
 }
-
-export default ContactForm;
