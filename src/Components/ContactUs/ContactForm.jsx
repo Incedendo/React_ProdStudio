@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextField from './Textfield';
 import './ContactUs.css';
+import './ContactForm.css';
 import '../../assets/css/scss/import.css';
 import PropTypes from 'prop-types';
 
@@ -48,10 +49,10 @@ export default class ContactForm extends Component {
   }
 
   renderError() {
-    if(!this.state.errors) {return null;}
+    if(!this.state.errors.length) {return null;}
     return(
       <div className='errorBox'>
-        { this.state.errors.map( (error, i) => <p className="errorInput" key={i}> { error.err } </p> )}
+        { this.state.errors.map( (error, i) => <p className="errorInput" style={{color: 'white'}}key={i}> { error.err } </p> )}
       </div>
     );
   }
@@ -132,6 +133,7 @@ export default class ContactForm extends Component {
         <div className="col-md-12 padding-top-3">
           <input type="submit" className="btn btn-block center btn-md btn-royal-light" value="Get in touch" />
         </div>
+        {this.renderError()}
       </form>
     );
   }

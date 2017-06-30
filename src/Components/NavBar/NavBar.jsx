@@ -41,19 +41,15 @@ const displayNavElem = () => {
 }
 
 const NavBar = () => (
-      <div id="header" className="header padding-2 margin-0 padding-left-3">
+      <div id="header" className="header padding-3 margin-0 padding-left-3">
         <a href="/" className="logo header-stagger tranform ">
           <Logo className="navBarLogo" source={logo}/>
         </a>
-        <div className="container margin-right-4 top-align">
+        <div className="container margin-right-0 padding-right-0 top-align">
           <div className="row">
-            <div className="col-md-12">
+            <div className="col-md-12 padding-right-0">
                 <ul className="pull-right">
-
                   {displayNavElem()}
-                  <li id="search">
-                    <Logo className="padding-left-3 search-icon header-stagger transform" source={search}/>
-                  </li>
                 </ul>
 
             </div>

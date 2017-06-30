@@ -8,8 +8,34 @@ const AboutUs = () => (
       <div className="row">
         <div className="col-md-12">
           <h2 className="h1 text-center padding-bottom-3">About Us</h2>
-          <p className="lead text-center">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent nec magna quis libero commodo fermentum tristique vitae mi. Vivamus at velit dui. Nullam ultricies urna id leo lacinia, nec varius sem mattis. Aliquam eu urna ut orci lacinia condimentum. Vivamus mi diam, elementum eu semper ut, pulvinar ut lectus. Nunc tempus posuere metus. Quisque rutrum cursus tincidunt.</p>
-          <p className="lead text-center padding-bottom-0 margin-bottom-0">Maecenas ut ante in magna scelerisque hendrerit. Vestibulum enim elit, volutpat rhoncus purus ultricies, hendrerit maximus neque. Vivamus et nulla egestas, pharetra dolor vitae, euismod orci. Praesent non tellus efficitur, semper ex vel, iaculis lacus. Nullam quis sem ligula. Donec viverra mauris vitae bibendum hendrerit. Proin turpis quam, imperdiet sed ligula sed, pharetra facilisis ante. Integer mi libero, vehicula ut sodales sit amet, ultricies eget risus. Integer sodales placerat lorem, vitae faucibus sem tincidunt at. Curabitur blandit, lorem quis aliquet porta, elit leo consectetur velit, nec gravida ligula felis fermentum lectus. Donec id nulla vitae ligula iaculis sollicitudin vel quis lectus.</p>
+          <p className="lead text-center bold">
+            CREATIVE</p>
+          <p className="lead text-center">
+            The team is responsible for the usability, design, and user testing for all the products in the product studio.
+
+            The team will be responsible for:
+            Product Ideation
+            User Story Generation
+            Proof of Concepts
+            Wireframes / User Flows
+            HTML
+            Interactive Prototypes
+            User Testing
+          </p>
+
+          <p className="lead text-center bold">
+            PRODUCT DEVELOPMENT</p>
+          <p className="lead text-center padding-bottom-0 margin-bottom-0">
+            The team is responsible for developing
+new products, enhancing existing, and maintaining existing products.
+The team will be responsible for: Develop New Product Enhance Existing Products Maintain (SRs & INC) Technical Proof of Concepts
+          </p><br></br>
+
+          <p className="lead text-center bold">
+            PROJECT MANAGEMENT</p>
+          <p className="lead text-center padding-bottom-0 margin-bottom-0">
+            The team is responsible for planning, executing, controlling, and closing the work of a team to achieve specific goals and meet specific success criteria.
+          </p>
         </div>
       </div>
     </div>

@@ -34,10 +34,12 @@
 .navBarLogo {
   position: relative;
   top: 5px;
+  left: 15px;
   float: left;
+  height: 90px !important;
 }
 
 .top-align {
   position: relative;
-  top: 27px;
+  top: 17px;
 }

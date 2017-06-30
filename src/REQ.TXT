@@ -1,0 +1,17 @@
+TOP BAR:
+  brand.valic.com top bar + 90% tarnsparent + interaction
+remove the search icon-search
+
+fix padding for nav background
+
+BOTTOM:
+-remove right bottom prod studio logo + replace VALIC .svg format logo
+-replace the bottom .svg file with white valic logo
+-white text
+
+align font with PSO
+validation for EMAIL reg ex
+
+-remove the or just email us entire portion
+
+-update content for work process in Evelyn's file

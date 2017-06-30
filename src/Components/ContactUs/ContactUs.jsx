@@ -29,7 +29,7 @@ const ContactUs = () => (
             <div className="row">
               <ContactForm />
             </div>
-            {contactEmail()}
+
           </div>
         </div>
       </div>

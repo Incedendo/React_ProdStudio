@@ -17,7 +17,7 @@ const Footer = () => (
         <div className="row">
           <FooterImg />
           <div className="col-md-10">
-            <p className="text-center">2727A Allen Parkway, 5th Floor, Houston, TX 77019    |    hello@productstudio.valic.com</p>
+            <p className="text-center" style={{color:'white'}} >2727A Allen Parkway, 5th Floor, Houston, TX 77019    |    hello@productstudio.valic.com</p>
           </div>
           <FooterImg />
         </div>
