@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Footer.css';
 import footer1 from '../../assets/img/ps_grey_logo.svg';
 import Logo from '../Logo/Logo';
@@ -11,14 +11,16 @@ const FooterImg = () => (
 )
 
 const Footer = () => (
-  <div className="footer">
-    <div className="container padding-top-4 padding-bottom-4">
-      <div className="row">
-        <FooterImg />
-        <div className="col-md-10">
-          <p className="text-center">2727A Allen Parkway, 5th Floor, Houston, TX 77019    |    hello@productstudio.valic.com</p>
+  <div className="staticFooter">
+    <div className="footer">
+      <div className="container padding-top-4 padding-bottom-4">
+        <div className="row">
+          <FooterImg />
+          <div className="col-md-10">
+            <p className="text-center">2727A Allen Parkway, 5th Floor, Houston, TX 77019    |    hello@productstudio.valic.com</p>
+          </div>
+          <FooterImg />
         </div>
-        <FooterImg />
       </div>
     </div>
   </div>

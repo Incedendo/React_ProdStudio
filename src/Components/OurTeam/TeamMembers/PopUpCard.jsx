@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import './PopUpCard.css';
-import teamInfo from '../teamInfo.js';
 import Logo from '../../Logo/Logo';
 
 const TeamMemberLogo = ({ source, onClick }) => (

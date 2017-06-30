@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
@@ -40,12 +40,12 @@ const App = ()  => (
         <ContactUs />
       </div>
 
-      <div>
-        <Footer />
-      </div>
+
     </div>
 
-    <div className="staticFooter">hello world</div>
+    <div>
+      <Footer className="staticFooter"/>
+    </div>
 
   </div>
 )

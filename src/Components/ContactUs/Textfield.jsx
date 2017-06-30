@@ -15,6 +15,7 @@ export default class TextField extends Component {
     guide: bool,
     keepCharPositions: bool,
     email: bool,
+    classes: string.isRequired,
   };
 
   static defaultProps = {
@@ -28,7 +29,8 @@ export default class TextField extends Component {
   };
 
   state = {
-    hasValue: false
+    hasValue: false,
+    error: false
   };
 
   onBlur = event => this.setState({ hasValue: !!event.currentTarget.value });
@@ -95,7 +97,7 @@ export default class TextField extends Component {
     const { id, placeholder } = this.props;
     if(!this.props.email) {
       return (
-        <div className="fl-input-container">
+        <div className={this.props.classes}>
           {this.renderInput()}
           <label className="fl-input-label" htmlFor={id}>
             {placeholder}
@@ -105,10 +107,10 @@ export default class TextField extends Component {
       );
     }else {
       return (
-        <div className="fl-input-container">
+        <div className={this.props.classes}>
           {this.renderInput()}
           <label className="fl-input-label" htmlFor={id}>
-            <img className='email-image' src={emailLogo} />
+            <img className='email-image' alt="emailLogo" src={emailLogo} />
           </label>
           {this.renderErrorMessage()}
         </div>

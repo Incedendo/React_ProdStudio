@@ -28,6 +28,21 @@
   background: #ffffff;
 }
 
+.nonScrolling {
+  position:absolute;
+  display: block;
+  top: 130px;
+  left:0px;
+  right:0px;
+  bottom:130px;
+  overflow-y:scroll;
+}​
+
+.staticFooter {
+  position: relative !important;
+  top: 1076px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './OurTeam.css';
 import TeamMember from './TeamMembers/TeamMember';
-import PopUpCard from './TeamMembers/PopUpCard';
 import '../../assets/css/scss/import.css';
 
 const OurTeam = () => {

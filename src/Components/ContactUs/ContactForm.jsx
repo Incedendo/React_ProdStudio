@@ -2,25 +2,31 @@ import React, { Component } from 'react';
 import TextField from './Textfield';
 import './ContactUs.css';
 import '../../assets/css/scss/import.css';
-import uuid from 'uuid';
+import PropTypes from 'prop-types';
 
 const contactUsFormConfig = [
   {
     placeholder: "username",
     id: "username",
     classes: "col-md-6",
+    noErrorClasses: "fl-input-container",
+    errorClasses: "fl-input-container error",
     email: false
   },
   {
     placeholder: "email",
     id: "email",
     classes: "col-md-6",
+    noErrorClasses: "fl-input-container",
+    errorClasses: "fl-input-container error",
     email: true
   },
   {
     placeholder: "comment",
     id: "comment",
     classes: "col-md-12 padding-bottom-3",
+    noErrorClasses: "fl-input-container",
+    errorClasses: "fl-input-container error",
     email: false
   },
 ]
@@ -28,6 +34,7 @@ const contactUsFormConfig = [
 export default class ContactForm extends Component {
 
   state = {
+    isSubmitted: false,
     username: "",
     email: "",
     comment: "",
@@ -56,16 +63,38 @@ export default class ContactForm extends Component {
       onChangeHook: event => this.handleTextFieldChange(event,id),
     }))
 
-    return formConfig.map(({classes, id, ...rest}) => (
-      <div className={classes} key={id}>
-        <TextField id={id} {...rest}/>
-      </div>
-    ))
+    return(
+      formConfig.map( ({classes,noErrorClasses, errorClasses, id, ...rest}) => {
+        if(!this.state.isSubmitted){
+          return (
+            <div className={classes} key={id}>
+              <TextField id={id} classes={noErrorClasses} {...rest}/>
+            </div>
+          );
+        }else{
+          if(!this.state[id]){
+            return (
+              <div className={classes} key={id}>
+                <TextField id={id} classes={errorClasses} {...rest}/>
+              </div>
+            );
+          }
+          else{
+            return (
+              <div className={classes} key={id}>
+                <TextField id={id} classes={noErrorClasses} {...rest}/>
+              </div>
+            );
+          }
+        }
+      })
+    );
   }
 
   handleCreate = (event) => {
     event.preventDefault();
     console.log(this.state.username);
+    this.setState({ isSubmitted: true });
 
     const validateInput = this.validateInput(this.state.username, this.state.email, this.state.comment)
 
@@ -100,7 +129,6 @@ export default class ContactForm extends Component {
     return (
       <form onSubmit={this.handleCreate}>
         {this.renderForm()}
-        {this.renderError()}
         <div className="col-md-12 padding-top-3">
           <input type="submit" className="btn btn-block center btn-md btn-royal-light" value="Get in touch" />
         </div>
@@ -110,7 +138,7 @@ export default class ContactForm extends Component {
 }
 
 ContactForm.propTypes = {
-  name: React.PropTypes.string,
-  email: React.PropTypes.string,
-  message: React.PropTypes.string
+  name: PropTypes.string,
+  email: PropTypes.string,
+  message: PropTypes.string
 }

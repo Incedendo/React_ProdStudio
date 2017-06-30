@@ -489,6 +489,9 @@
     .fl-input-container input:focus + label {
       color: #191f26; }
 
+.fl-input-container.error input {
+  border-color: red !important; }
+
 .fl-input-label {
   -moz-transform-origin: left top;
   -moz-transform: scale(1) translate3d(0, 22px, 0);

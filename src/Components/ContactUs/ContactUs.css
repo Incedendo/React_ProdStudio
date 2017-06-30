@@ -12,3 +12,7 @@
   height: auto;
   width: auto;
 }
+
+.errorBorder{
+  border-color: red !important;
+}

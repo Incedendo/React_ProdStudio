@@ -24,29 +24,64 @@
   text-shadow: none;
 }
 
-.fl-input-container input {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  border-radius: 0;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  font-size: 100%;
-  // line-height: 25px;
-  line-height: 30px;
-  padding: 1.65rem 1.0rem .35rem !important;
-  transition: border-color .2s ease-in-out;
-  font-family: 'SourceSansPro-Regular', Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: auto;
+// .fl-input-container-error input {
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   -webkit-tap-highlight-color: transparent;
+//   border-radius: 0;
+//   border-color: red !important;
+//   display: -moz-flex;
+//   display: -ms-flexbox;
+//   display: -webkit-flex;
+//   display: flex;
+//   font-size: 100%;
+//   // line-height: 25px;
+//   line-height: 30px;
+//   padding: 1.65rem 1.0rem .35rem !important;
+//   transition: border-color .2s ease-in-out;
+//   font-family: 'SourceSansPro-Regular', Arial, Helvetica, sans-serif;
+//   -webkit-font-smoothing: auto;
+//
+//   &:focus {
+//     //border-color: $royal-light;
+//     border-color: red !important;
+//
+//     & + label {
+//       color: $slate-dark;
+//     }
+//   }
+// }
 
-  &:focus {
-    //border-color: $royal-light;
-    border-color: #00a4e4 !important;
+.fl-input-container{
+  input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 0;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 100%;
+    // line-height: 25px;
+    line-height: 30px;
+    padding: 1.65rem 1.0rem .35rem !important;
+    transition: border-color .2s ease-in-out;
+    font-family: 'SourceSansPro-Regular', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: auto;
 
-    & + label {
-      color: $slate-dark;
+    &:focus {
+      //border-color: $royal-light;
+      border-color: #00a4e4 !important;
+
+      & + label {
+        color: $slate-dark;
+      }
+    }
+  }
+  &.error{
+    input{
+      border-color: red !important;
     }
   }
 }
